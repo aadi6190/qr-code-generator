@@ -1,0 +1,143 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; /* Dark gray background */
+  padding: 90px;
+  color: #fff; /* White text color */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 20px; /* Larger font size */
+  margin-bottom: 15px; /* Increased margin bottom */
+  color: #ffcc00; /* Yellow text color */
+}
+
+.footer-column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px; /* Reduced margin bottom */
+}
+
+.footer-column ul li a {
+  color: #ccc; /* Light gray text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffcc00; /* Yellow text color on hover */
+}
+
+.footer-newsletter {
+  margin-top: 30px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer-newsletter h3 {
+  font-size: 20px; /* Larger font size */
+  margin-bottom: 15px; /* Increased margin bottom */
+}
+
+.footer-newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  margin-bottom: 15px; /* Increased margin bottom */
+  border: 1px solid #ffcc00; /* Yellow border */
+  border-radius: 4px;
+  background-color: #444; /* Dark gray background */
+  color: #fff; /* White text color */
+}
+
+.footer-newsletter input[type="email"]::placeholder {
+  color: #ccc; /* Light gray placeholder color */
+}
+
+.footer-newsletter button[type="submit"] {
+  background-color: #ffcc00; /* Yellow background */
+  color: #333; /* Dark gray text color */
+  border: none;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button[type="submit"]:hover {
+  background-color: #ffc107; /* Lighter yellow background on hover */
+}
+
+.footer-social-icons {
+  margin-top: 20px;
+}
+
+.footer-social-icons a {
+  margin-right: 20px; /* Increased margin right */
+}
+
+.footer-social-icons img {
+  width: 40px; /* Adjusted icon size */
+  height: 40px;
+  border-radius: 50%; /* Rounded corners */
+}
+
+.footer-download-app {
+  margin-top: 20px;
+}
+
+.footer-download-app a {
+  margin-right: 20px; /* Increased margin right */
+}
+
+.footer-download-app img {
+  width: 50px; /* Adjusted icon size */
+  height: 50px;
+}
+
+/* Media query for responsiveness */
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px; /* Adjusted padding for better spacing */
+    }
+    .footer-links{
+        display: flex;
+        margin-left: 1rem;
+        flex-direction: row;
+        flex-wrap:wrap ;
+        justify-content: space-evenly;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 1; /* Added flex property to occupy full width */
+    }
+
+    .footer-newsletter {
+        max-width: 100%;
+    }
+}
+
